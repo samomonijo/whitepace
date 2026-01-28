@@ -1,4 +1,5 @@
 import ContentImgSection from "./components/ContentImgSection";
+import CustomiseImg from "./assets/customise.jpg";
 
 const Customise = () => {
   return (
@@ -9,7 +10,7 @@ const Customise = () => {
         imgSide="left"
         header="Customise it to your needs"
         content="Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API."
-        img="/src/assets/customise.jpg"
+        img={CustomiseImg}
         tryBtnContent="Let's Go"
       />
     </section>

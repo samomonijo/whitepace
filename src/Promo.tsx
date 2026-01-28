@@ -1,4 +1,5 @@
 import ContentImgSection from "./components/ContentImgSection";
+import ProjectManagementImg from "./assets/project-management.webp";
 
 const Promo = () => {
   return (
@@ -10,7 +11,7 @@ const Promo = () => {
         imgSide="right"
         header="Project Management"
         content="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
-        img="/src/assets/project-management.webp"
+        img={ProjectManagementImg}
         tryBtnContent="Get Started"
       />
 
@@ -21,7 +22,7 @@ const Promo = () => {
         imgSide="left"
         header="Work together"
         content="With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others."
-        img="/src/assets/project-management.webp"
+        img={ProjectManagementImg}
         tryBtnContent="Try it now"
       />
     </section>

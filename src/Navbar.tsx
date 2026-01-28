@@ -1,12 +1,14 @@
 import MobileNavbar from "./MobileNavbar";
 import DropdownGroup from "./components/DropdownGroup";
 
+import Logo from "./assets/logo.png";
+
 const Navbar = () => {
   return (
     <header className="bg-[#043873] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] py-4 flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
-        <img src="/src/assets/logo.png" alt="Whitepace Logo" className="flex w-7/10 lg:w-3/5" />
+        <img src={Logo} alt="Whitepace Logo" className="flex w-7/10 lg:w-3/5" />
         <div className="hidden font-[Inter] min-[1250px]:flex text-white m-0 p-0 text-xl ml-0.5 font-semibold">
           whitepace
         </div>
