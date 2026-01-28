@@ -1,11 +1,13 @@
 import TabIcon from "/src/assets/logo.png";
                                                                           
 import Header from "./Navbar";
-import Hero from "./Hero";
+import GetMoreDone from "./GetMoreDone";
 import PromoSection from "./Promo";
 import Extension from "./Extension";
 import Customise from "./Customise";
 import Pricing from "./Pricing";
+import Everywhere from "./Everywhere";
+import YourData from "./YourData";
 
 function App() {
   return (
@@ -15,11 +17,13 @@ function App() {
       
       <div className="font-[Inter]">
         <Header />
-        <Hero />
+        <GetMoreDone />
         <PromoSection />
         <Extension />
         <Customise />
         <Pricing />
+        <Everywhere />
+        <YourData />
       </div>
     </>
   );

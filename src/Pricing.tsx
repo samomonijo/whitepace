@@ -1,18 +1,20 @@
 import { CheckCircle2 } from "lucide-react";
+
 import plans from "./constants/plans";
+
 import TryBtn from "./components/TryBtn";
+import Heading from "./components/Heading";
 
 const Pricing = () => {
   return (
-    <section className="bg-white py-12 px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
+    <section className="bg-white py-12 px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] mb-20">
       <div className="flex-1 space-y-6 mb-18">
-        <h1 className="text-4xl sm:text-[40px] font-bold leading-tight text-center mb-3">
-          Choose Your Plan
-        </h1>
-
-        <p className="text-sm min-[1500px]:text-base justify-self-center text-center max-w-3xl mb-12">
-          Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
-        </p>
+        <Heading 
+          textColor="black" 
+          heading="Choose Your Plan" 
+          content="Whether you want to get organized, keep your personal life on track, 
+          or boost workplace productivity, Evernote has the right plan for you." 
+        />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">

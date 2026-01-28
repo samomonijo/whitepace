@@ -1,3 +1,5 @@
+import RightArrow from "./RightArrow";
+
 const TryBtn = ({ bgColor, content }: { bgColor: string, content: string }) => {
   return (
     <a
@@ -8,7 +10,7 @@ const TryBtn = ({ bgColor, content }: { bgColor: string, content: string }) => {
         hover:bg-blue-700 text-xs min-[1500px]:text-base font-semibold inline-flex items-center justify-center w-36 h-10 rounded whitespace-nowrap
       `}
     >
-      {content} <span className="ml-1">&#x2192;</span>
+      {content} <span className="ml-1"><RightArrow /></span>
     </a>
   );
 };

@@ -1,5 +1,6 @@
 import ContentImgSection from "./components/ContentImgSection";
 import ProjectManagementImg from "./assets/project-management.webp";
+import WorkTogetherImg from "./assets/work-together.png";
 
 const Promo = () => {
   return (
@@ -22,7 +23,7 @@ const Promo = () => {
         imgSide="left"
         header="Work together"
         content="With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others."
-        img={ProjectManagementImg}
+        img={WorkTogetherImg}
         tryBtnContent="Try it now"
       />
     </section>

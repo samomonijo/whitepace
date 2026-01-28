@@ -1,7 +1,7 @@
 import ContentImgSection from "./components/ContentImgSection";
 import GetMoreDoneImg from "./assets/hero.png";
 
-const Hero = () => {
+const GetMoreDone = () => {
   return (
     <section className="bg-[#043873] pt-[8%] pb-20">
       <ContentImgSection
@@ -17,4 +17,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default GetMoreDone;
