@@ -27,7 +27,7 @@ const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, 
 
         {/* Text Content */}
         <div className="flex-1 space-y-6 max-[769px]:text-center">
-          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3">
+          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80">
             {header}
           </h1>
 

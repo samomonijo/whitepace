@@ -1,6 +1,4 @@
-export const dropdowns = ["Products", "Solutions", "Resources", "Pricing"];
-
-export const plans = [
+const plans = [
   {
     name: "Free",
     price: "$0",
@@ -41,3 +39,5 @@ export const plans = [
     ],
   },
 ];
+
+export default plans;

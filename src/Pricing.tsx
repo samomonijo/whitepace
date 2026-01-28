@@ -1,5 +1,5 @@
 import { CheckCircle2 } from "lucide-react";
-import { plans } from "../public/data";
+import plans from "./constants/plans";
 import TryBtn from "./components/TryBtn";
 
 const Pricing = () => {
