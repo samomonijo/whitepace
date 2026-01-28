@@ -1,0 +1,31 @@
+import ContentImgSection from "./components/ContentImgSection";
+
+const Promo = () => {
+  return (
+    <section className="bg-white text-black flex flex-col gap-20 pt-[8%] pb-20">
+      {/* Project Management Section */}
+      <ContentImgSection
+        bgColor="white"
+        textColor="black"
+        imgSide="right"
+        header="Project Management"
+        content="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
+        img="/src/assets/project-management.webp"
+        tryBtnContent="Get Started"
+      />
+
+      {/* Work Together Section */}
+      <ContentImgSection
+        bgColor="white"
+        textColor="black"
+        imgSide="left"
+        header="Work together"
+        content="With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others."
+        img="/src/assets/project-management.webp"
+        tryBtnContent="Try it now"
+      />
+    </section>
+  );
+};
+
+export default Promo;
