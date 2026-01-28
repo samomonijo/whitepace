@@ -1,4 +1,4 @@
-const H1heading = ({ textColor, heading }: { textColor: string, heading: string }) => {
+const H1Heading = ({ textColor, heading }: { textColor: string, heading: string }) => {
   return (
     <h1 className={`text-4xl sm:text-[40px] ${(textColor === "white") ? "text-white" : "text-black"} 
     font-bold leading-tight text-center mb-3`}>
@@ -7,4 +7,4 @@ const H1heading = ({ textColor, heading }: { textColor: string, heading: string 
   );
 };
 
-export default H1heading;
+export default H1Heading;
