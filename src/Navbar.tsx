@@ -9,7 +9,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img src={Logo} alt="Whitepace Logo" className="flex w-7/10 lg:w-3/5" />
-        <div className="hidden font-[Inter] min-[1250px]:flex text-white m-0 p-0 text-xl ml-0.5 font-semibold">
+        <div className="hidden font-[Inter] min-[1250px]:flex text-white text-xl ml-2 font-semibold">
           whitepace
         </div>
       </div>

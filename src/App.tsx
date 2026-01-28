@@ -1,8 +1,8 @@
-import TabIcon from "/src/assets/logo.png";
+import TabIcon from "/src/assets/logo-tab-icon.png";
                                                                           
 import Header from "./Navbar";
 import GetMoreDone from "./GetMoreDone";
-import PromoSection from "./Promo";
+import ManagementAndCollaboration from "./ManagementAndCollaboration";
 import Extension from "./Extension";
 import Customise from "./Customise";
 import Pricing from "./Pricing";
@@ -18,7 +18,7 @@ function App() {
       <div className="font-[Inter]">
         <Header />
         <GetMoreDone />
-        <PromoSection />
+        <ManagementAndCollaboration />
         <Extension />
         <Customise />
         <Pricing />

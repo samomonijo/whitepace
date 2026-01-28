@@ -2,9 +2,9 @@ import ContentImgSection from "./components/ContentImgSection";
 import ProjectManagementImg from "./assets/project-management.webp";
 import WorkTogetherImg from "./assets/work-together.png";
 
-const Promo = () => {
+const ManagementAndCollaboration = () => {
   return (
-    <section className="bg-white text-black flex flex-col gap-20 pt-[8%] pb-20">
+    <section className="bg-white text-black flex flex-col gap-12 pt-[8%] pb-20">
       {/* Project Management Section */}
       <ContentImgSection
         bgColor="white"
@@ -30,4 +30,4 @@ const Promo = () => {
   );
 };
 
-export default Promo;
+export default ManagementAndCollaboration;

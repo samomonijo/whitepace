@@ -12,22 +12,26 @@ type ContentImgSectionProps = {
 
 const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, tryBtnContent }: ContentImgSectionProps) => {
   return (
-    <section className={`${bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} ${textColor === 'white' ? 'text-white' : 'text-black'} px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]`}>
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:space-x-12">
+    <section className={`
+        ${bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
+        ${textColor === 'white' ? 'text-white' : 'text-black'} 
+        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]`
+    }>
+      <div className="max-w-6xl mx-auto flex flex-col items-center justify-between md:flex-row md:space-x-12">
         {/* Illustration */}
         {(imgSide === 'left') && (
-          <div className="flex-1 mt-10 md:mt-0 md:mr-12">
+          <div className="flex-1 mt-10 md:mt-0 flex justify-center md:justify-start">
             <img
               src={img}
               alt="Collaboration illustration"
-              className="w-full h-auto"
+              className="w-4/5 h-auto"
             />
           </div>
         )}
 
         {/* Text Content */}
         <div className="flex-1 space-y-6 max-[769px]:text-center">
-          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80">
+          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80 max-[769px]:justify-self-center">
             {header}
           </h1>
 
@@ -40,7 +44,7 @@ const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, 
 
         {/* Illustration */}
         {(imgSide === 'right') && (
-          <div className="flex-1 mt-10 md:mt-0 md:mr-12">
+          <div className="flex-1 mt-10 md:mt-0">
             <img
               src={img}
               alt="Collaboration illustration"
