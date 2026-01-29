@@ -17,8 +17,8 @@ const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content
       className={`
         ${bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${textColor === 'white' ? 'text-white' : 'text-black'} 
-        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]
-        bg-[#043873] ${bgImg ? `bg-[url('/${bgImg}')] bg-cover bg-center` : ''} pt-[7%] pb-5
+        ${bgImg ? `bg-[url('${bgImg}')] bg-cover bg-center` : ''}
+        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] bg-[#043873] pt-[7%] pb-5
       `}
     >
       <div className="max-w-6xl mx-auto flex flex-col space-y-8 md:justify-between md:flex-row md:space-y-0">

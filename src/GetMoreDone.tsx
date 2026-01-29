@@ -4,7 +4,7 @@ import GetMoreDoneImg from "./assets/hero.png";
 const GetMoreDone = () => {
   return (
     <ContentImgSection
-      bgImg="curly.png"
+      bgImg="/curly.png"
       bgColor="blue"
       textColor="white"
       imgSide="right"
