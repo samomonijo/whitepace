@@ -5,6 +5,7 @@ const YourData = () => {
   return (
     <section className="py-20">
       <ContentImgSection
+        bgImg=""
         bgColor="white"
         textColor="black"
         imgSide="right"
