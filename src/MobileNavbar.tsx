@@ -1,10 +1,12 @@
-import { useState } from "react";
 import { X } from 'lucide-react';
 import HamburgerMenu from "./assets/harmburger-menu.png";
 
-const MobileNavbar = () => {
-  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+type MobileNavbarProps = {
+  mobileDrawerOpen: boolean, 
+  setMobileDrawerOpen: (mobileDrawerOpen: boolean) => void
+}
 
+const MobileNavbar = ({ mobileDrawerOpen, setMobileDrawerOpen }: MobileNavbarProps) => {
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };

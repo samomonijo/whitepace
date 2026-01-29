@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Logo from "./assets/logo.png";
 
@@ -6,8 +7,13 @@ import dropdowns from "./constants/dropdowns";
 import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
   return (
-    <header className="bg-[#043873] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] py-4 flex items-center justify-between">
+    <header className={`
+        ${mobileDrawerOpen && "fixed left-0 right-0 top-0"}
+        bg-[#043873] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] py-4 flex items-center justify-between
+      `}>
       {/* Logo */}
       <div className="flex items-center mr-20">
         <img src={Logo} alt="Whitepace Logo" className="flex w-7/10 lg:w-3/5" />
@@ -49,7 +55,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu */}
-      <MobileNavbar />
+      <MobileNavbar mobileDrawerOpen={mobileDrawerOpen} setMobileDrawerOpen={setMobileDrawerOpen} />
     </header>
   );
 };
