@@ -1,6 +1,12 @@
 import H1Heading from "./H1Heading";
 
-const Heading = ({ textColor, heading, content }: { textColor: string, heading: string, content: string }) => {
+type HeadingProps = {
+  textColor: string, 
+  heading: string, 
+  content: string
+}
+
+const Heading = ({ textColor, heading, content }: HeadingProps) => {
   return (
     <>
       <H1Heading textColor={textColor} heading={heading} />
