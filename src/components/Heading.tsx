@@ -1,4 +1,4 @@
-import H1Heading from "./H1Heading";
+import H1Heading from "./h1Heading";
 
 type HeadingProps = {
   textColor: string, 
