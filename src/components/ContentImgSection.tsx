@@ -1,6 +1,7 @@
 import TryBtn from "./TryBtn";
 
 type ContentImgSectionProps = {
+  bgImg: string,
   bgColor: string,
   textColor: string,
   imgSide: string,
@@ -10,19 +11,20 @@ type ContentImgSectionProps = {
   tryBtnContent: string
 };
 
-const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, tryBtnContent }: ContentImgSectionProps) => {
+const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content, img, tryBtnContent }: ContentImgSectionProps) => {
   return (
     <section
       className={`
         ${bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${textColor === 'white' ? 'text-white' : 'text-black'} 
         px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]
+        bg-[#043873] ${bgImg ? `bg-[url('/${bgImg}')] bg-cover bg-center` : ''} pt-[7%] pb-5
       `}
     >
-      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-8 md:justify-between md:flex-row md:space-y-0">
+      <div className="max-w-6xl mx-auto flex flex-col space-y-8 md:justify-between md:flex-row md:space-y-0">
         {/* Illustration */}
         {imgSide === 'left' && (
-          <div className="flex-1 md:mt-0">
+          <div className="flex-1">
             <img
               src={img}
               alt="Collaboration illustration"

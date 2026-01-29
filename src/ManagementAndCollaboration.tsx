@@ -4,9 +4,10 @@ import WorkTogetherImg from "./assets/work-together.png";
 
 const ManagementAndCollaboration = () => {
   return (
-    <section className="bg-white text-black flex flex-col gap-12 pt-[8%] pb-20">
+    <>
       {/* Project Management Section */}
       <ContentImgSection
+        bgImg=""
         bgColor="white"
         textColor="black"
         imgSide="right"
@@ -18,6 +19,7 @@ const ManagementAndCollaboration = () => {
 
       {/* Work Together Section */}
       <ContentImgSection
+        bgImg=""
         bgColor="white"
         textColor="black"
         imgSide="left"
@@ -26,7 +28,7 @@ const ManagementAndCollaboration = () => {
         img={WorkTogetherImg}
         tryBtnContent="Try it now"
       />
-    </section>
+    </>
   );
 };
 

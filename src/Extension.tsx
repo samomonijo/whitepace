@@ -5,6 +5,7 @@ const Extension = () => {
   return (
     <section className="bg-[#043873] py-[15%] sm:py-[5%]">
       <ContentImgSection
+        bgImg=""
         bgColor="blue"
         textColor="white"
         imgSide="right"
