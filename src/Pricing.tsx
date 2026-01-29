@@ -7,7 +7,7 @@ import Heading from "./components/Heading";
 
 const Pricing = () => {
   return (
-    <section className="bg-white flex items-center flex-col mt-[8%] mb-[7%] sm:py-[5%] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
+    <section className="bg-white flex items-center flex-col mt-[15%] mb-[7%] sm:py-[5%] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
       <div className="flex-1 space-y-6 mb-[2%]">
         <Heading 
           textColor="black" 
