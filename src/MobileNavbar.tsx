@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X } from 'lucide-react';
+import { X } from 'lucide-react';
 import DropdownGroup from "./components/DropdownGroup";
+import HamburgerMenu from "./assets/harmburger-menu.png";
 
 const MobileNavbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -13,7 +14,7 @@ const MobileNavbar = () => {
     <>
       <div className="lg:hidden md:hidden flex flex-col justify-end">
         <button className="cursor-pointer text-white" onClick={toggleNavbar}>
-          <Menu />
+          <img src={HamburgerMenu} alt="Menu" />
         </button>
       </div>
 
