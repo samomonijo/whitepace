@@ -7,7 +7,7 @@ import Heading from "./components/Heading";
 
 const Pricing = () => {
   return (
-    <section className="bg-white flex items-center flex-col py-[15%] sm:py-[5%] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] mb-20">
+    <section className="bg-white flex items-center flex-col mt-[8%] mb-[7%] sm:py-[5%] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
       <div className="flex-1 space-y-6 mb-[2%]">
         <Heading 
           textColor="black" 
@@ -51,7 +51,9 @@ const Pricing = () => {
             </ul>
 
             {/* Button */}
-            <TryBtn bgColor={i !== 1 ? "white" : "blue"} content="Get Started" />
+            <div className="flex items-center justify-center md:justify-start">
+              <TryBtn bgColor={i !== 1 ? "white" : "blue"} content="Get Started" />
+            </div>
           </div>
         ))}
       </div>

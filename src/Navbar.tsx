@@ -4,13 +4,12 @@ import Logo from "./assets/logo.png";
 import dropdowns from "./constants/dropdowns";
 
 import MobileNavbar from "./MobileNavbar";
-import TryBtn from "./components/TryBtn";
 
 const Navbar = () => {
   return (
     <header className="bg-[#043873] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] py-4 flex items-center justify-between">
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center mr-20">
         <img src={Logo} alt="Whitepace Logo" className="flex w-7/10 lg:w-3/5" />
         <div className="hidden font-[Inter] max-[768px]:flex min-[800px]:flex text-white text-xl ml-2 font-semibold">
           whitepace
@@ -25,7 +24,7 @@ const Navbar = () => {
               key={label}
               href={`#${label.toLowerCase()}`}
               className="flex items-center justify-between cursor-pointer hover:border-b hover:border-b-white 
-          transition gap-1"
+              transition gap-1"
             >
               <span>{label}</span>
               <ChevronDown className="w-4 h-4 text-white" />
@@ -43,9 +42,9 @@ const Navbar = () => {
             Try Whitepace free <span className="ml-1">&#x2192;</span>
           </a>
 
-          <div className="lg:hidden">
-            <TryBtn bgColor="blue" content="Try" />
-          </div>
+          <a href="#" className="flex lg:hidden bg-[#4F9CF9] hover:bg-blue-700 text-white font-semibold px-4 py-3 rounded whitespace-nowrap">
+            Try <span className="ml-1">&#x2192;</span>
+          </a>
         </div>
       </div>
 
