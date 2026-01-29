@@ -3,7 +3,7 @@ import CustomiseImg from "./assets/customise.jpg";
 
 const Customise = () => {
   return (
-    <section className="pt-[8%] pb-20">
+    <section className="py-[15%] sm:py-[5%] border-b border-b-[#043873]">
       <ContentImgSection
         bgColor="white"
         textColor="black"

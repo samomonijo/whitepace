@@ -1,7 +1,10 @@
-import MobileNavbar from "./MobileNavbar";
-import DropdownGroup from "./components/DropdownGroup";
-
+import { ChevronDown } from "lucide-react";
 import Logo from "./assets/logo.png";
+
+import dropdowns from "./constants/dropdowns";
+
+import MobileNavbar from "./MobileNavbar";
+import TryBtn from "./components/TryBtn";
 
 const Navbar = () => {
   return (
@@ -17,7 +20,17 @@ const Navbar = () => {
       <div className="flex">
         {/* Dropdowns */}
         <div className="hidden md:flex lg:flex space-x-2 md:space-x-4 lg:space-x-6 text-[70%] text-white mr-15">
-          <DropdownGroup />
+          {dropdowns.map(label => (
+            <a
+              key={label}
+              href={`#${label.toLowerCase()}`}
+              className="flex items-center justify-between cursor-pointer hover:border-b hover:border-b-white 
+          transition gap-1"
+            >
+              <span>{label}</span>
+              <ChevronDown className="w-4 h-4 text-white" />
+            </a>
+          ))}
         </div>
 
         {/* Action Buttons */}
@@ -30,9 +43,9 @@ const Navbar = () => {
             Try Whitepace free <span className="ml-1">&#x2192;</span>
           </a>
 
-          <a href="#" className="flex lg:hidden bg-[#4F9CF9] text-white font-semibold px-4 py-3 rounded hover:bg-blue-700 whitespace-nowrap">
-            Try &#x2192;
-          </a>
+          <div className="lg:hidden">
+            <TryBtn bgColor="blue" content="Try" />
+          </div>
         </div>
       </div>
 

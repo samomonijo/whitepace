@@ -3,7 +3,7 @@ import ExtensionImg from "./assets/extension.png";
 
 const Extension = () => {
   return (
-    <section className="bg-[#043873] pt-[8%] pb-20">
+    <section className="bg-[#043873] py-[15%] sm:py-[5%]">
       <ContentImgSection
         bgColor="blue"
         textColor="white"

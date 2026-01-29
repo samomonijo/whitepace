@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { X } from 'lucide-react';
-import DropdownGroup from "./components/DropdownGroup";
 import HamburgerMenu from "./assets/harmburger-menu.png";
 
 const MobileNavbar = () => {
@@ -14,43 +13,32 @@ const MobileNavbar = () => {
     <>
       <div className="lg:hidden md:hidden flex flex-col justify-end">
         <button className="cursor-pointer text-white" onClick={toggleNavbar}>
-          <img src={HamburgerMenu} alt="Menu" />
+          {mobileDrawerOpen ? (
+            <X className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
+          ) : <img src={HamburgerMenu} alt="Menu" />
+          }
         </button>
       </div>
 
       {mobileDrawerOpen && (
-        <div className="fixed inset-0 z-20 w-full h-full overflow-y-auto p-6 sm:p-8 md:p-12 flex flex-col bg-black lg:hidden">
-          {/* Close Button */}
-          <button
-            className="absolute top-6 right-6 cursor-pointer bg-red-600 rounded p-1 text-white"
-            onClick={toggleNavbar}
-          >
-            <X className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8" />
-          </button>
+        <div className="fixed shadow-xl left-0 right-0 top-15 z-20 px-6 sm:px-8 md:px-12 py-6 sm:py-4 md:py-6 bg-[#043873] lg:hidden">
+          {/* Navigation Links */}
+          <nav className="flex flex-col items-center space-y-6 text-white text-sm w-full max-w-xs mx-auto">
+            <a href="#" className="hover:text-blue-300 transition">Products</a>
+            <a href="#" className="hover:text-blue-300 transition">Solutions</a>
+            <a href="#" className="hover:text-blue-300 transition">Resources</a>
+            <a href="#" className="hover:text-blue-300 transition">Pricing</a>
 
-          {/* Dropdowns */}
-          <div className="flex flex-col space-y-4 text-xs text-white mt-8 w-full max-w-sm mx-auto">
-            <DropdownGroup />
-          </div>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col space-y-4 mt-8 w-full max-w-sm mx-auto">
-            <a
-              href="#"
-              className="bg-[#FFE492] text-[#114174] font-semibold text-xs flex items-center justify-center px-5 py-2 rounded hover:bg-yellow-500"
-            >
+            <a href="#" className="bg-[#FFE492] text-[#114174] px-10 py-2 md:px-6 md:py-3 font-semibold rounded hover:bg-yellow-500 inline-flex items-center justify-center w-42 h-10 transition">
               Login
             </a>
-            <a
-              href="#"
-              className="bg-[#4F9CF9] text-xs text-white font-semibold flex items-center justify-center px-4 py-3 rounded hover:bg-blue-700"
-            >
-              Try Whitepace free &#x2192;
+
+            <a href="#" className="bg-[#4F9CF9] hover:bg-blue-700 text-white font-semibold px-4 py-3 rounded whitespace-nowrap inline-flex items-center justify-center w-42 h-10 transition">
+              Try Whitepace free <span className="ml-1">&#x2192;</span>
             </a>
-          </div>
+          </nav>
         </div>
       )}
-
     </>
   );
 };

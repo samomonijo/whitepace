@@ -19,10 +19,10 @@ const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, 
         px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]
       `}
     >
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:space-x-12 space-y-12 md:space-y-0 items-center justify-between">
+      <div className="max-w-6xl mx-auto flex flex-col items-center space-y-8 md:justify-between md:flex-row md:space-y-0">
         {/* Illustration */}
         {imgSide === 'left' && (
-          <div className="flex-1 mt-10 md:mt-0 flex justify-center">
+          <div className="flex-1 md:mt-0">
             <img
               src={img}
               alt="Collaboration illustration"
@@ -46,7 +46,7 @@ const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, 
 
         {/* Illustration */}
         {imgSide === 'right' && (
-          <div className="flex-1 mt-10 md:mt-0">
+          <div className="flex-1 md:mt-0">
             <img
               src={img}
               alt="Collaboration illustration"
