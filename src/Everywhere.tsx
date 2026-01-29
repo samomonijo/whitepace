@@ -23,7 +23,7 @@ const Everywhere = () => {
       </div>
 
       {/* Illustration / Image */}
-      <div className="absolute right-0 -top-20">
+      <div className="absolute right-0 -top-20 max-[1300px]:hidden">
         <img src={ImageSrc} alt="Taskey promo illustration" className="w-full max-w-md object-contain" />
       </div>
     </section>

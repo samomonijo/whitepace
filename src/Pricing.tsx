@@ -7,7 +7,7 @@ import Heading from "./components/Heading";
 
 const Pricing = () => {
   return (
-    <section className="bg-white py-12 px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] mb-20">
+    <section className="bg-white flex items-center flex-col py-12 px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] mb-20">
       <div className="flex-1 space-y-6 mb-18">
         <Heading 
           textColor="black" 
@@ -17,12 +17,12 @@ const Pricing = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className="flex items-center flex-col gap-8 sm:grid sm:grid-cols-1 md:grid md:grid-cols-3">
         {plans.map((plan, i) => (
           <div
             key={plan.name}
             className={`${i === 1 ? "bg-[#043873] shadow-xl md:scale-110" : "bg-white"} 
-            rounded-lg border border-gray-200 p-6 flex flex-col`}
+            rounded-lg border border-gray-200 p-6 flex flex-col max-w-100`}
           >
             {/* Plan Header */}
             <div className={`mb-4 flex flex-col gap-5 ${i === 1 ? "text-white" : "text-black"}`}>

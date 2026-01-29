@@ -12,15 +12,17 @@ type ContentImgSectionProps = {
 
 const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, tryBtnContent }: ContentImgSectionProps) => {
   return (
-    <section className={`
+    <section
+      className={`
         ${bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${textColor === 'white' ? 'text-white' : 'text-black'} 
-        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]`
-    }>
-      <div className="max-w-6xl mx-auto flex flex-col items-center justify-between md:flex-row md:space-x-12">
+        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]
+      `}
+    >
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:space-x-12 space-y-12 md:space-y-0 items-center justify-between">
         {/* Illustration */}
-        {(imgSide === 'left') && (
-          <div className="flex-1 mt-10 md:mt-0 flex justify-center md:justify-start">
+        {imgSide === 'left' && (
+          <div className="flex-1 mt-10 md:mt-0 flex justify-center">
             <img
               src={img}
               alt="Collaboration illustration"
@@ -43,7 +45,7 @@ const ContentImgSection = ({ bgColor, textColor, imgSide, header, content, img, 
         </div>
 
         {/* Illustration */}
-        {(imgSide === 'right') && (
+        {imgSide === 'right' && (
           <div className="flex-1 mt-10 md:mt-0">
             <img
               src={img}
