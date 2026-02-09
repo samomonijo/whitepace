@@ -14,11 +14,11 @@ type ContentImgSectionProps = {
 const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content, img, tryBtnContent }: ContentImgSectionProps) => {
   return (
     <section
+      style={{ backgroundImage: `url(${bgImg})` }}
       className={`
         ${bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${textColor === 'white' ? 'text-white' : 'text-black'} 
-        ${bgImg ? `bg-[url('${bgImg}')] bg-cover bg-center` : ''}
-        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] bg-[#043873] pt-[7%] pb-5
+        bg-cover bg-center px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-5
       `}
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-center space-y-8 md:justify-between md:flex-row md:space-y-0">

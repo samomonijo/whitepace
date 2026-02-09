@@ -1,5 +1,3 @@
-import TabIcon from "/src/assets/logo-tab-icon.png";
-                                                                          
 import Header from "./Navbar";
 import GetMoreDone from "./GetMoreDone";
 import ManagementAndCollaboration from "./ManagementAndCollaboration";
@@ -13,7 +11,7 @@ function App() {
   return (
     <>
       <title>Whitepace</title>
-      <link rel="icon" type="image/svg+html" href={TabIcon} />
+      <link rel="icon" type="image/svg+html" href="/tab-icon-logo.png" />
       
       <div className="font-[Inter]">
         <Header />
