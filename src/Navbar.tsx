@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import Logo from "./assets/logo.png";
 
@@ -7,7 +7,21 @@ import dropdowns from "./constants/dropdowns";
 import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
-  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState<boolean>(() => {
+    const stored = localStorage.getItem("mobileDrawerOpen");
+    return stored ? JSON.parse(stored) : false;
+  });
+
+  useEffect(() => {
+    if (mobileDrawerOpen) {
+      document.body.classList.add("no-scroll");
+    }
+    else {
+      document.body.classList.remove("no-scroll");
+    }
+
+    localStorage.setItem('mobileDrawerOpen', JSON.stringify(mobileDrawerOpen));
+  }, [mobileDrawerOpen]);
 
   return (
     <header className={`

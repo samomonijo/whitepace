@@ -8,10 +8,11 @@ type ContentImgSectionProps = {
   header: string,
   content: string,
   img: string,
+  imgAlt: string,
   tryBtnContent: string
 };
 
-const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content, img, tryBtnContent }: ContentImgSectionProps) => {
+const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content, img, imgAlt, tryBtnContent }: ContentImgSectionProps) => {
   return (
     <section
       style={{ backgroundImage: `url(${bgImg})` }}
@@ -27,7 +28,7 @@ const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content
           <div className="md:flex-1 md:mt-0 flex justify-center">
             <img
               src={img}
-              alt="Collaboration illustration"
+              alt={imgAlt}
               className="w-9/10 sm:w-3/5 md:w-4/5 h-auto"
             />
           </div>
@@ -51,7 +52,7 @@ const ContentImgSection = ({ bgImg, bgColor, textColor, imgSide, header, content
           <div className="md:flex-1 md:mt-0 flex justify-center">
             <img
               src={img}
-              alt="Collaboration illustration"
+              alt={imgAlt}
               className="w-9/10 sm:w-3/5 md:w-4/5 h-auto"
             />
           </div>

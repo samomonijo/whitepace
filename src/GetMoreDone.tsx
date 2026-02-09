@@ -11,6 +11,7 @@ const GetMoreDone = () => {
       header="Get More Done with whitepace"
       content="Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks"
       img={GetMoreDoneImg}
+      imgAlt="Get More Done Illustration"
       tryBtnContent="Try Whitepace free"
     />
   );

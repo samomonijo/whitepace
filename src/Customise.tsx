@@ -11,6 +11,7 @@ const Customise = () => {
       header="Customise it to your needs"
       content="Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API."
       img={CustomiseImg}
+      imgAlt="Customization Illustration"
       tryBtnContent="Let's Go"
     />
   );

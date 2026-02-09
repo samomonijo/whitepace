@@ -4,7 +4,7 @@ import TryBtn from "./components/TryBtn";
 
 const Everywhere = () => {
   return (
-    <section className="bg-[#043873] py-15 relative">
+    <section className="bg-[#043873] py-15 relative z-0">
       {/* Text Content */}
       <div>
         <Heading 
@@ -22,8 +22,8 @@ const Everywhere = () => {
         </div>
       </div>
 
-      {/* Illustration / Image */}
-      <div className="absolute right-0 -top-20 max-[1300px]:hidden">
+      {/* Image Illustration */}
+      <div className="absolute right-0 -top-20 max-[1300px]:hidden z-0">
         <img src={ImageSrc} alt="Taskey promo illustration" className="w-full max-w-md object-contain" />
       </div>
     </section>

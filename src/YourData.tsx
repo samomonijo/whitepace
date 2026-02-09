@@ -15,6 +15,7 @@ const YourData = () => {
         Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
       "
       img={YourDataImg}
+      imgAlt="100% your data illustration"
       tryBtnContent="Get Started"
     />
   );

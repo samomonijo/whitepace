@@ -14,6 +14,7 @@ const ManagementAndCollaboration = () => {
         header="Project Management"
         content="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
         img={ProjectManagementImg}
+        imgAlt="Project Management Illustration"
         tryBtnContent="Get Started"
       />
 
@@ -26,6 +27,7 @@ const ManagementAndCollaboration = () => {
         header="Work together"
         content="With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others."
         img={WorkTogetherImg}
+        imgAlt="Working Together Illustration"
         tryBtnContent="Try it now"
       />
     </>

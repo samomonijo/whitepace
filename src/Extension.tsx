@@ -11,6 +11,7 @@ const Extension = () => {
       header="Use as Extension"
       content="Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes."
       img={ExtensionImg}
+      imgAlt="Use as an extension illustration"
       tryBtnContent="Let's Go"
     />
   );
