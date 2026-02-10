@@ -7,6 +7,7 @@ import Pricing from "./Pricing";
 import Everywhere from "./Everywhere";
 import YourData from "./YourData";
 import Sponsors from "./Sponsors";
+import WorkWithApps from "./WorkWithApps";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Everywhere />
         <YourData />
         <Sponsors />
+        <WorkWithApps />
       </div>
     </>
   );
