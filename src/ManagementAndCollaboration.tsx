@@ -7,28 +7,40 @@ const ManagementAndCollaboration = () => {
     <>
       {/* Project Management Section */}
       <ContentImgSection
-        bgImg=""
-        bgColor="white"
-        textColor="black"
-        imgSide="right"
-        header="Project Management"
-        content="Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note."
-        img={ProjectManagementImg}
-        imgAlt="Project Management Illustration"
-        tryBtnContent="Get Started"
+        bg={{ bgImg: "", bgColor: "white" }}
+
+        headingProps={{
+          heading: "Project ",
+          headingSpanContent: "Management",
+          underline: "long-orange",
+        }}
+
+        contentProps={{
+          content: "Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.",
+          textColor: "black",
+          tryBtnContent: "Get Started"
+        }}
+
+        imgIcon={{ imgSide: "right", img: `${ProjectManagementImg}`, imgAlt: "Project Management Illustration" }}
       />
 
       {/* Work Together Section */}
       <ContentImgSection
-        bgImg=""
-        bgColor="white"
-        textColor="black"
-        imgSide="left"
-        header="Work together"
-        content="With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others."
-        img={WorkTogetherImg}
-        imgAlt="Working Together Illustration"
-        tryBtnContent="Try it now"
+        bg={{ bgImg: "", bgColor: "white" }}
+
+        headingProps={{
+          heading: "Work ",
+          headingSpanContent: "together",
+          underline: "short-orange",
+        }}
+
+        contentProps={{
+          content: "With Whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.",
+          textColor: "black",
+          tryBtnContent: "Try it now"
+        }}
+
+        imgIcon={{ imgSide: "left", img: `${WorkTogetherImg}`, imgAlt: "Work Together Illustration" }}
       />
     </>
   );

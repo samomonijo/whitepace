@@ -10,10 +10,16 @@ const Pricing = () => {
     <section className="bg-white flex items-center flex-col mt-[15%] sm:mt-0 mb-[7%] sm:py-[5%] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
       <div className="flex-1 space-y-6 mb-[2%]">
         <Heading 
-          textColor="black" 
-          heading="Choose Your Plan" 
-          content="Whether you want to get organized, keep your personal life on track, 
-          or boost workplace productivity, Evernote has the right plan for you." 
+          headingProps={{
+            heading: "Choose ", 
+            underline: "long-orange",
+            headingSpanContent: "Your Plan"
+          }}
+
+          contentProps={{
+            textColor: "black",
+            content: "Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you." 
+          }}
         />
       </div>
 

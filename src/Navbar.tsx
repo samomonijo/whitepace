@@ -24,7 +24,8 @@ const Navbar = () => {
   }, [mobileDrawerOpen]);
 
   return (
-    <header className={`
+    <header 
+      className={`
         ${mobileDrawerOpen && "fixed left-0 right-0 top-0"}
         bg-[#043873] px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] py-4 flex items-center justify-between
       `}>
@@ -44,7 +45,7 @@ const Navbar = () => {
               key={label}
               href={`#${label.toLowerCase()}`}
               className="flex items-center justify-between cursor-pointer hover:border-b hover:border-b-white 
-              transition gap-1"
+              transition duration-500 gap-1"
             >
               <span>{label}</span>
               <ChevronDown className="w-4 h-4 text-white" />

@@ -4,17 +4,24 @@ import TryBtn from "./components/TryBtn";
 
 const Everywhere = () => {
   return (
-    <section className="bg-[#043873] py-15 relative z-0">
+    <section className="bg-[#043873] py-15 relative bg-[url('/arch.png')] bg-no-repeat bg-size-[15%]">
       {/* Text Content */}
       <div>
         <Heading 
-          textColor="white"
-          heading="Your work, everywhere you are"
-          content="
-            Access your notes from your computer, phone or tablet by synchronizing with various services, 
-            including Whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. 
-            A terminal app is also available!
-          "
+          headingProps={{
+            heading: "Your work, everywhere ",
+            headingSpanContent: "you are",
+            underline: "blue"
+          }}
+          
+          contentProps={{
+            textColor: "white",
+            content: `
+              Access your notes from your computer, phone or tablet by synchronizing with various services, 
+              including Whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. 
+              A terminal app is also available!
+            `
+          }}
         />
 
         <div className="justify-self-center">
@@ -23,7 +30,7 @@ const Everywhere = () => {
       </div>
 
       {/* Image Illustration */}
-      <div className="absolute right-0 -top-20 max-[1300px]:hidden z-0">
+      <div className="absolute right-0 -top-20 max-[1300px]:hidden">
         <img src={ImageSrc} alt="Taskey promo illustration" className="w-full max-w-md object-contain" />
       </div>
     </section>
