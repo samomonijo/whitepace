@@ -32,8 +32,14 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
 
   return (
     <section
+      style={{ 
+        backgroundImage: `url('/${bg.bgImg}')`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover"
+      }}
+
       className={`
-        ${bg.bgImg ? `bg-[url('/${bg.bgImg}')] bg-cover` : ''}
         ${bg.bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${contentProps.textColor === 'white' ? 'text-white' : 'text-black'} 
         px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-10

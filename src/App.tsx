@@ -6,6 +6,7 @@ import Customise from "./Customise";
 import Pricing from "./Pricing";
 import Everywhere from "./Everywhere";
 import YourData from "./YourData";
+import Sponsors from "./Sponsors";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Pricing />
         <Everywhere />
         <YourData />
+        <Sponsors />
       </div>
     </>
   );

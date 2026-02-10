@@ -20,7 +20,7 @@ const H1Heading = ({ headingProps, contentProps }: H1HeadingProps) => {
         text-4xl sm:text-[40px] justify-self-center font-bold leading-tight text-center mb-3 max-[600px]:max-w-100
         ${(contentProps.textColor === "white") ? "text-white" : "text-black"}
       `}>
-      {headingProps.heading}
+      {headingProps.heading}{" "}
 
       <span
         style={{
