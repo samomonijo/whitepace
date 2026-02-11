@@ -4,7 +4,7 @@ import H1Heading from "./components/H1Heading";
 
 const Sponsors = () => {
   return (
-    <section className="px-5 py-12 bg-white">
+    <section className="px-5 md:pt-10 mb-10 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <H1Heading

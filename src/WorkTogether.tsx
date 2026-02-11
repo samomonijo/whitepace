@@ -3,7 +3,7 @@ import WorkTogetherImg from "./assets/work-together.png";
 
 const WorkTogether = () => {
   return (
-    <section className="sm:-mt-15">
+    <section className="max-[768px]:-mt-10 sm:-mt-15">
       <ContentImgSection
         bg={{ bgImg: "", bgColor: "white" }}
 

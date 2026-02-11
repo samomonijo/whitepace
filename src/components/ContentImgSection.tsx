@@ -42,7 +42,7 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
       className={`
         ${bg.bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${contentProps.textColor === 'white' ? 'text-white' : 'text-black'} 
-        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-[5%]
+        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-[5%] max-[768px]:pt-[10%] max-[768px]:pb-[15%]
       `}
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-center space-y-8 md:justify-end md:flex-row md:space-y-0">
