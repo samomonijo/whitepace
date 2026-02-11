@@ -7,7 +7,7 @@ const WorkWithApps = () => {
       bg={{ bgImg: "curly.png", bgColor: "blue" }}
 
       headingProps={{
-        heading: "Get More Done with whitepace", 
+        heading: "Work with Your Favorite Apps Using whitepace", 
         headingSpanContent: "",
         underline: ""
       }}

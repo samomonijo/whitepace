@@ -42,7 +42,7 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
       className={`
         ${bg.bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${contentProps.textColor === 'white' ? 'text-white' : 'text-black'} 
-        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-10
+        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-[5%]
       `}
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-center space-y-8 md:justify-end md:flex-row md:space-y-0">
@@ -59,8 +59,7 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
 
         {/* Text Content */}
         <div className="md:flex-1 md:justify-end space-y-6 max-[769px]:text-center">
-          <h1 className="relative inline-block text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80 
-          max-[769px]:justify-self-center">
+          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80 max-[769px]:justify-self-center">
             {headingProps.heading}
 
             <span

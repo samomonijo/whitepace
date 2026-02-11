@@ -1,6 +1,7 @@
 import Header from "./Navbar";
 import GetMoreDone from "./GetMoreDone";
-import ManagementAndCollaboration from "./ManagementAndCollaboration";
+import ProjectManagement from "./ProjectManagement";
+import WorkTogether from "./WorkTogether";
 import Extension from "./Extension";
 import Customise from "./Customise";
 import Pricing from "./Pricing";
@@ -8,6 +9,7 @@ import Everywhere from "./Everywhere";
 import YourData from "./YourData";
 import Sponsors from "./Sponsors";
 import WorkWithApps from "./WorkWithApps";
+import Testimonials from "./Testimonials";
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
       <div className="font-[Inter]">
         <Header />
         <GetMoreDone />
-        <ManagementAndCollaboration />
+        <ProjectManagement />
+        <WorkTogether />
         <Extension />
         <Customise />
         <Pricing />
@@ -26,6 +29,7 @@ function App() {
         <YourData />
         <Sponsors />
         <WorkWithApps />
+        <Testimonials />
       </div>
     </>
   );

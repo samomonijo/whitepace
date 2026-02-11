@@ -1,15 +1,10 @@
-import AppleLogo from "./assets/apple.png";
-import MicrosoftLogo from "./assets/microsoft.svg";
-import SlackLogo from "./assets/slack.svg";
-import GoogleLogo from "./assets/google.svg";
+import sponsorsIcons from "./constants/sponsors";
 
 import H1Heading from "./components/H1Heading";
 
 const Sponsors = () => {
-  const sponsorsIcons = [AppleLogo, MicrosoftLogo, SlackLogo, GoogleLogo];
-
   return (
-    <section className="py-12 bg-white">
+    <section className="px-5 py-12 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <H1Heading
@@ -25,14 +20,14 @@ const Sponsors = () => {
         />
 
         {/* Logos */}
-        <div className="flex flex-wrap justify-between items-center mt-[5%]">
+        <div className="mt-[5%] grid grid-cols-2 gap-5 md:flex md:flex-wrap md:justify-between md:items-center">
           {sponsorsIcons.map((icon, i) => {
             return (
               <img
                 key={i}
                 src={icon}
                 alt="Apple"
-                className="h-10 sm:h-12 object-contain"
+                className="h-10 sm:h-12 object-contain justify-self-center"
               />
             )
           })}

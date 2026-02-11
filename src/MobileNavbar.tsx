@@ -23,7 +23,7 @@ const MobileNavbar = ({ mobileDrawerOpen, setMobileDrawerOpen }: MobileNavbarPro
       </div>
 
       {mobileDrawerOpen && (
-        <div className="fixed shadow-xl left-0 right-0 top-15 px-6 sm:px-8 md:px-12 py-6 sm:py-4 md:py-6 bg-[#043873] lg:hidden">
+        <div className="fixed shadow-xl left-0 z-60 right-0 top-15 px-6 sm:px-8 md:px-12 py-6 sm:py-4 md:py-6 bg-[#043873] lg:hidden">
           {/* Navigation Links */}
           <nav className="flex flex-col items-center space-y-6 text-white text-sm w-full max-w-xs mx-auto">
             <a href="#" className="hover:text-blue-300 transition">Products</a>
