@@ -1,5 +1,6 @@
 import { X } from 'lucide-react';
 import HamburgerMenu from "./assets/harmburger-menu.png";
+import Anchors from './components/Anchors';
 
 type MobileNavbarProps = {
   mobileDrawerOpen: boolean, 
@@ -26,11 +27,12 @@ const MobileNavbar = ({ mobileDrawerOpen, setMobileDrawerOpen }: MobileNavbarPro
         <div className="fixed shadow-xl left-0 z-60 right-0 top-15 px-6 sm:px-8 md:px-12 py-6 sm:py-4 md:py-6 bg-[#043873] lg:hidden">
           {/* Navigation Links */}
           <nav className="flex flex-col items-center space-y-6 text-white text-sm w-full max-w-xs mx-auto">
-            <a href="#" className="hover:text-blue-300 transition">Products</a>
-            <a href="#" className="hover:text-blue-300 transition">Solutions</a>
-            <a href="#" className="hover:text-blue-300 transition">Resources</a>
-            <a href="#" className="hover:text-blue-300 transition">Pricing</a>
-
+            <Anchors 
+              downArrow={false} 
+              styles="hover:text-blue-300 transition" 
+              setMobileDrawerOpen={setMobileDrawerOpen}
+            />
+        
             <a href="#" className="bg-[#FFE492] text-[#114174] px-10 py-2 md:px-6 md:py-3 font-semibold rounded hover:bg-yellow-500 inline-flex items-center justify-center w-42 h-10 transition">
               Login
             </a>

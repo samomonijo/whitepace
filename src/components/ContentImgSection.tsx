@@ -1,4 +1,5 @@
-import TryBtn from "./TryBtn";
+import CTABtn from "./CTABtn";
+import HeadingContent from "./HeadingContent";
 
 type ContentImgSectionProps = {
   bg: {
@@ -42,7 +43,7 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
       className={`
         ${bg.bgColor === 'blue' ? 'bg-[#043873]' : 'bg-white'} 
         ${contentProps.textColor === 'white' ? 'text-white' : 'text-black'} 
-        px-[9%] sm:px-[4%] md:px-[6%] lg:px-[10%] pt-[7%] pb-[5%] max-[768px]:pt-[10%] max-[768px]:pb-[15%]
+        px-[9%] pt-[5%] pb-[10%] sm:px-[4%] md:px-[6%] md:pt-[5%] md:pb-[3%] lg:px-[10%]
       `}
     >
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-center space-y-8 md:justify-end md:flex-row md:space-y-0">
@@ -58,8 +59,8 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
         )}
 
         {/* Text Content */}
-        <div className="md:flex-1 md:justify-end space-y-6 max-[769px]:text-center">
-          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80 max-[769px]:justify-self-center">
+        <div className="md:flex-1 space-y-6 max-[650px]:text-center">
+          <h1 className="text-4xl sm:text-[40px] font-bold leading-tight mb-3 max-w-80 max-[650px]:justify-self-center">
             {headingProps.heading}
 
             <span
@@ -74,11 +75,14 @@ const ContentImgSection = ({ bg, headingProps, contentProps, imgIcon }: ContentI
             </span>
           </h1>
 
-          <p className="text-sm min-[1500px]:text-base max-w-4/5 max-[769px]:justify-self-center max-[640px]:mb-8 mb-12">
-            {contentProps.content}
-          </p>
+          <HeadingContent
+            textColor={contentProps.textColor}
+            fontSize="small"
+            alignCenter={false}
+            content={contentProps.content}
+          />
 
-          <TryBtn bgColor="blue" content={contentProps.tryBtnContent} />
+          <CTABtn bgColor="blue" content={contentProps.tryBtnContent} />
         </div>
 
         {/* Illustration */}

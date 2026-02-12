@@ -2,12 +2,12 @@ import { CheckCircle2 } from "lucide-react";
 
 import plans from "./constants/plans";
 
-import TryBtn from "./components/TryBtn";
+import CTABtn from "./components/CTABtn";
 import Heading from "./components/Heading";
 
 const Pricing = () => {
   return (
-    <section className="bg-white flex items-center flex-col mb-[7%] px-[9%] sm:mt-0 sm:py-[2%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
+    <section id="pricing" className="bg-white flex items-center flex-col mb-[7%] px-[9%] sm:mt-0 sm:py-[2%] sm:px-[4%] md:px-[6%] lg:px-[10%]">
       <div className="flex-1 space-y-6 mb-[2%]">
         <Heading 
           headingProps={{
@@ -18,6 +18,7 @@ const Pricing = () => {
 
           contentProps={{
             textColor: "black",
+            fontSize: "small",
             content: "Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you." 
           }}
         />
@@ -58,7 +59,7 @@ const Pricing = () => {
 
             {/* Button */}
             <div className="flex items-center justify-center md:justify-start">
-              <TryBtn bgColor={i !== 1 ? "white" : "blue"} content="Get Started" />
+              <CTABtn bgColor={i !== 1 ? "white" : "blue"} content="Get Started" />
             </div>
           </div>
         ))}

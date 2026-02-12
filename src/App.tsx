@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import OfflineUI from "./OfflineUI";
 
 import Header from "./Navbar";
 import GetMoreDone from "./GetMoreDone";
@@ -12,8 +13,7 @@ import YourData from "./YourData";
 import Sponsors from "./Sponsors";
 import WorkWithApps from "./WorkWithApps";
 import Testimonials from "./Testimonials";
-
-import OfflineUI from "./OfflineUi";
+import Footer from "./Footer";
 
 function App() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -54,6 +54,7 @@ function App() {
             <Sponsors />
             <WorkWithApps />
             <Testimonials />
+            <Footer />
           </div>
         </>
       ) : (

@@ -3,6 +3,19 @@ import MicrosoftLogo from "../assets/microsoft.svg";
 import SlackLogo from "../assets/slack.svg";
 import GoogleLogo from "../assets/google.svg";
 
-const sponsorsIcons = [AppleLogo, MicrosoftLogo, SlackLogo, GoogleLogo];
+const sponsorsLogos = [{ 
+    imgSrc: AppleLogo, 
+    imgAlt: "Apple" 
+  }, { 
+    imgSrc: MicrosoftLogo, 
+    imgAlt: "Microsoft" 
+  }, {  
+    imgSrc: SlackLogo,
+    imgAlt: "Slack"
+  }, { 
+    imgSrc: GoogleLogo,
+    imgAlt: "Google"
+  }
+];
 
-export default sponsorsIcons;
+export default sponsorsLogos;

@@ -1,4 +1,5 @@
 import H1Heading from "./H1Heading";
+import HeadingContent from "./HeadingContent";
 
 type HeadingProps = {
   headingProps: {
@@ -10,6 +11,7 @@ type HeadingProps = {
   contentProps: {
     textColor: string, 
     content: string,
+    fontSize: string
   }
 }
 
@@ -28,12 +30,12 @@ const Heading = ({ headingProps, contentProps }: HeadingProps) => {
         }}
       />
 
-      <p className={`
-          text-sm min-[1500px]:text-base px-[10%] justify-self-center text-center md:max-w-[75%] mb-12
-          ${(contentProps.textColor === "white") ? "text-white" : "text-black"} 
-        `}>
-        {contentProps.content}
-      </p>
+      <HeadingContent 
+        fontSize={contentProps.fontSize}
+        textColor={contentProps.textColor}
+        alignCenter={true}
+        content={contentProps.content}
+      />
     </>
   );
 };

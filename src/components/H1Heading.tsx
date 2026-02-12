@@ -18,6 +18,7 @@ const H1Heading = ({ headingProps, contentProps }: H1HeadingProps) => {
   return (
     <h1 className={`
         text-4xl sm:text-[40px] justify-self-center font-bold leading-tight text-center mb-3 max-[600px]:max-w-100
+        whitespace-pre-line
         ${(contentProps.textColor === "white") ? "text-white" : "text-black"}
       `}>
       {headingProps.heading}{" "}
@@ -37,6 +38,3 @@ const H1Heading = ({ headingProps, contentProps }: H1HeadingProps) => {
 };
 
 export default H1Heading;
-
-// headerSpanContent: "your needs",
-// underline: "long-orange",

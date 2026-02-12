@@ -1,6 +1,6 @@
 import ImageSrc from "./assets/taskey.png";
 import Heading from "./components/Heading";
-import TryBtn from "./components/TryBtn";
+import CTABtn from "./components/CTABtn";
 
 const Everywhere = () => {
   return (
@@ -16,6 +16,7 @@ const Everywhere = () => {
           
           contentProps={{
             textColor: "white",
+            fontSize: "small",
             content: `
               Access your notes from your computer, phone or tablet by synchronizing with various services, 
               including Whitepace, Dropbox and OneDrive. The app is available on Windows, macOS, Linux, Android and iOS. 
@@ -25,7 +26,7 @@ const Everywhere = () => {
         />
 
         <div className="justify-self-center">
-          <TryBtn bgColor="blue" content="Try Taskey" />
+          <CTABtn bgColor="blue" content="Try Taskey" />
         </div>
       </div>
 

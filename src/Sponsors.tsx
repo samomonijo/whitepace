@@ -1,10 +1,10 @@
-import sponsorsIcons from "./constants/sponsors";
+import sponsorsLogos from "./constants/sponsors";
 
 import H1Heading from "./components/H1Heading";
 
 const Sponsors = () => {
   return (
-    <section className="px-5 md:pt-10 mb-10 bg-white">
+    <section id="products" className="px-5 md:pt-10 mb-10 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         {/* Heading */}
         <H1Heading
@@ -21,12 +21,12 @@ const Sponsors = () => {
 
         {/* Logos */}
         <div className="mt-[5%] grid grid-cols-2 gap-5 md:flex md:flex-wrap md:justify-between md:items-center">
-          {sponsorsIcons.map((icon, i) => {
+          {sponsorsLogos.map((icon, i) => {
             return (
               <img
                 key={i}
-                src={icon}
-                alt="Apple"
+                src={icon.imgSrc}
+                alt={icon.imgAlt}
                 className="h-10 sm:h-12 object-contain justify-self-center"
               />
             )
