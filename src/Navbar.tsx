@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-
 import Logo from "./components/Logo";
 import MobileNavbar from "./MobileNavbar";
 import Anchors from "./components/Anchors";

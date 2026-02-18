@@ -5,8 +5,7 @@ const CTABtn = ({ bgColor, content }: { bgColor: string, content: string }) => {
     <a
       href="#"
       className={`
-        ${bgColor === 'white' ? 'bg-white border border-gray-200 hover:text-white' : 'bg-[#4F9CF9]'} 
-        ${bgColor === 'white' ? 'text-gray-800' : 'text-gray-100'} 
+        ${bgColor === 'white' ? 'bg-white border border-gray-200 hover:text-white text-gray-800' : 'bg-[#4F9CF9] text-gray-100'} 
         hover:bg-blue-700 text-xs min-[1500px]:text-base font-semibold inline-flex items-center justify-center w-42 h-10 rounded whitespace-nowrap transition
       `}
     >
